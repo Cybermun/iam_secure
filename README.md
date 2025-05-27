@@ -12,3 +12,11 @@ iam-secure/
 ├── scripts/                  
 │   └── configure_keycloak.sh
 └── README.md
+
+
+http://localhost:8080
+Login as admin/admin
+Show Realm: demo, Client: flask-client, User: testuser
+Get access token via curl
+public ➝ should work
+protected ➝ fails w/o token, works with token

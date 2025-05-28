@@ -1,17 +1,12 @@
-Project Structure
-iam-secure/
-├── docker-compose.yml
-├── Makefile
-├── config/
-│   └── keycloak/
-│       └── demo-realm.json
+iam_secure/
+├── docker-compose.yml        # Container orchestration file
+├── keycloak/                 # Keycloak realm and config
 ├── flask-app/
-│   ├── app.py
-│   ├── Dockerfile
-│   └── requirements.txt
-├── scripts/                  
-│   └── configure_keycloak.sh
-└── README.md
+│   ├── app.py                # Defines API routes and logic
+│   ├── verify_token.py       # Verifies JWT tokens using Keycloak public key
+│   ├── requirements.txt      # Required Python packages
+│   └── .env                  # Secure storage for environment variables
+└── README.txt                # Instructions for setup and usage
 
 
 http://localhost:8080
